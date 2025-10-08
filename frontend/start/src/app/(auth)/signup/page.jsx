@@ -6,6 +6,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import SpinnerMini from "@/ui/SpinnerMini";
 import { useAuth } from "@/context/AuthContext";
+import Link from "next/link";
 
 const schema = yup
   .object({
@@ -77,6 +78,15 @@ function Signup() {
           )}
         </div>
       </form>
+            <p className="mt-6 text-sm flex justify-center gap-1">
+            حساب ساخته اید؟
+        <Link
+          href="/signup"
+          className="text-secondary-500 font-semibold hover:text-blue-600"
+        >
+          ورود
+        </Link>
+      </p>
     </div>
   );
 }
