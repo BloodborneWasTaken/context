@@ -1,5 +1,4 @@
 import Navbar from "@/components/NavBar";
-import Footer from "@/components/Footer";
 import vazirFont from "@/constants/localFont";
 import "@/styles/globals.css";
 import { Toaster } from "react-hot-toast";
